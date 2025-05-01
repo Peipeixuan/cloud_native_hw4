@@ -1,0 +1,64 @@
+# === Global ignores ===
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+.env
+.env.*
+
+# === Python ===
+*/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.egg-info/
+.venv/
+venv/
+.env/
+instance/
+.webassets-cache
+
+# === Node.js (React frontend) ===
+node_modules/
+build/
+dist/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.cache/
+.next/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Docker ===
+*.pid
+*.sock
+docker-compose.override.yml
+# Docker volumes (if mounted from local)
+volumes/
+# Docker build caches
+**/.docker-cache/
+
+# === Grafana (provisioned dashboards can be ignored if generated) ===
+grafana/data/
+grafana/plugins/
+grafana/grafana.db
+grafana/logs/
+
+# === Prometheus (data) ===
+prometheus/data/
+prometheus/wal/
+prometheus/queries.active
+
+# === VS Code / JetBrains editors ===
+.vscode/
+.idea/
+
+# === OS ===
+ehthumbs.db
+Desktop.ini
