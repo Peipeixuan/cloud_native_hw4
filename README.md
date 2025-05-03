@@ -21,13 +21,14 @@ docker run -d -p 5173:5173 peixuan911/2025cloud:frontend
 ```
 
 ## 測試
-進入：http://localhost:8000
-進入：http://localhost:5173
+- 進入：http://localhost:8000
+- 進入：http://localhost:5173
 即可看到 Hello 等字
 
 ## 說明：自動化產生 Container Image 的邏輯
 專案的 Docker 映像檔建構與推送是透過 GitHub Actions 自動完成的。以下是整體邏輯流程圖：
 
+![image](https://github.com/Peipeixuan/cloud_native_hw4/blob/main/img/chart.png?raw=true)
 自動化建構流程：
 1. Git Push to Main：當開發人員將代碼推送到 main 分支時，會觸發 GitHub Actions 工作流。
 2. GitHub Actions Workflow Run：這會觸發工作流，並且根據 Dockerfile 分別為 frontend 和 backend 構建容器映像檔。
